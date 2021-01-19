@@ -1,0 +1,42 @@
+[
+    
+{
+    "artist":"The Weeknd",
+    "album":"After Hours",
+    "year":2020,
+    "songs":[
+        "Blinding Lights",
+        "Heartless",
+        "Save Your Tears",
+        "In Your Eyes"
+    ]
+
+},
+
+{
+    "artist":"Post Malone",
+    "album": "Hollywood's Bleeding",
+    "year":2019,
+    "songs":[
+        "Saint-Tropez",
+        "Circles",
+        "Sunflower",
+        "Wow"
+    ]
+
+},
+
+{
+    "artist":"Justin Bieber",
+    "album":"Changes",
+    "year":2020,
+    "songs":[
+        "Yummy",
+        "Intentions",
+        "All Around Me",
+        "Habitual"
+    ]
+}
+
+
+]
