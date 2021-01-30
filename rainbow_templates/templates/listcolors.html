@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="static/color.css">
+    <title>Rainbow</title>
 </head>
-<body id = "orange">
-    <h1>Brios's Rainbow</h1>
-    <h3>Orange</h3>
+<body>
+    <ul>
+        {% for color in colors %}
+        <li><a href="/{{color}}">{{color}}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

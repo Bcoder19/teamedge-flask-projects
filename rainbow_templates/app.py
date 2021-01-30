@@ -49,7 +49,8 @@ def violet():
 
 @app.route('/rainbow')
 def rainbow():
-    return 
+    colors=["red","orange","yellow","green","blue","indigo","violet"]
+    return render_template('listcolors.html', colors = colors)
 
 if __name__ == '__main__':
     app.run(debug = True, host ='0.0.0.0')
