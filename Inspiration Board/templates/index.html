@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sense HAT Inspiration Message Board</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-    <h1>Send me an inspirational message!</h1>
-    <form action="/success" method="POST">
-        <label for="message">Your message: </label>
-        <input type="text" id="message" name="message" placeholder="Message">
+    
+    <form class="form" action="/success" method="POST">
+        <h1>Send me an inspirational message!</h1>
 
+        <label for="msg">Your message: </label>
+        <input type="text" id="msg" name="message" placeholder="Your message...">
+        
         <label for="name">From: </label>
-        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="text" id="name" name="name" placeholder="Your name...">
         
         <button type="submit">Send</button>
     </form>
+    
 </body>
 </html>
