@@ -1,27 +1,20 @@
 from flask import Flask, request, redirect, render_template, current_app as app
-from sense_emu import SenseHat
+from sense_hat import SenseHat
 
 app = Flask(__name__)
 sense = SenseHat()
 
 
-@app.route('/',methods=['POST','GET'])
+@app.route('/',methods=['GET'])
 def index():
-
-    if request.method == 'POST':
-       
-
-        message = request.form.get("message")
-        sense.show_message(message)
-        
-        return redirect('/success')
-
     return render_template('index.html')
 
 
-@app.route('/success',methods=['GET'])
+@app.route('/success',methods=['POST','GET'])
 def success():
-    return render_template('success.html')
+    message = request.form.get("message")
+    sense.show_message(message)
+    return render_template('success.html', message = message)
 
 
 
