@@ -21,10 +21,18 @@ body{
     border-radius: 5px;
 }
 
-
+.field{
+    margin:10px;
+}
 
 .form button{
-    background-color: orange;
-    color:white;
+    background-color: #f1c40f;
+    color:black;
     padding:5px;
+    border-radius: 5px;
+}
+
+.form button:hover{
+    background-color: #d35400;
+    color:white;
 }
