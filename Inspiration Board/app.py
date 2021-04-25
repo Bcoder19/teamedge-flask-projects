@@ -21,7 +21,7 @@ def success():
     conn = sqlite3.connect('./static/data/inspirationBoard.db')
     cursor = conn.cursor()
     cursor.execute("INSERT INTO messages (name, message) VALUES((?),(?))", (name,message))
-    cursor.commit()
+    conn.commit()
     #close databae connection
     conn.close()
 
